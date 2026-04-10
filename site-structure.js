@@ -24,17 +24,23 @@
     document.write(preloaderHTML);
 })();
 
-window.addEventListener('load', () => {
+(function() {
     const preloader = document.getElementById('cc-preloader');
     if (preloader) {
-        // Forced delay to show the animation (2 seconds)
-        setTimeout(() => {
+        let isDismissed = false;
+        const dismiss = () => {
+            if (isDismissed) return;
+            isDismissed = true;
             preloader.style.opacity = '0';
             preloader.style.visibility = 'hidden';
             setTimeout(() => preloader.remove(), 700);
-        }, 2000);
+        };
+        // Maximum 1.5 seconds visibility cap
+        setTimeout(dismiss, 1500);
+        // Dismiss immediately when page is fully loaded
+        window.addEventListener('load', dismiss);
     }
-});
+})();
 
 // ========== FAVICON INJECTION ==========
 (function() {
