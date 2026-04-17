@@ -53,12 +53,7 @@
         .modal-content { transform: scale(0.9) translateY(20px); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
         .modal-overlay.active .modal-content { transform: scale(1) translateY(0); }
         
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .logo-slider-track { display: flex; width: max-content; animation: scroll 60s linear infinite; }
-        .logo-slider-track:hover { animation-play-state: paused; }
+
     </style>
 <script src='site-structure.js'></script>
 </head>
@@ -124,51 +119,54 @@
             </div>
         </div>
         
-        <div class="relative flex items-center">
-            <!-- Left Fade Overlay -->
-            <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            <!-- Right Fade Overlay -->
-            <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-            <div class="logo-slider-track flex items-center gap-24 py-8">
-                <!-- Set 1 -->
-                <div class="flex items-center gap-24">
-                    <img src="Recruitment%20Partners%20LOgo/1693557381600.jpg" alt="Partner Logo" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/2.PNG" alt="Partner Logo 2" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/3.PNG" alt="Partner Logo 3" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/4.JPG.jpeg" alt="Partner Logo 4" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/5.JPG.jpeg" alt="Partner Logo 5" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/6.JPG.jpeg" alt="Partner Logo 6" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Artboard-1GP-LOGO-e1739172944544.png" alt="Partner Logo 7" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Global+Partners.webp" alt="Partner Logo 8" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Logo-05.png" alt="Partner Logo 9" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Prisn-Global-HR-Logo.png" alt="Partner Logo 10" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Untitled-design-12-1.png" alt="Partner Logo 11" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/cropped-GLOBAL-FULL-LOGO.png" alt="Partner Logo 12" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/cropped-Image1.png" alt="Partner Logo 13" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/cropped-global-rec-sia.png" alt="Partner Logo 14" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/og-image.png" alt="Partner Logo 15" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/undutchables-recruitment-partner.png.webp" alt="Partner Logo 16" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                </div>
-                <!-- Set 2 -->
-                <div class="flex items-center gap-24">
-                    <img src="Recruitment%20Partners%20LOgo/1693557381600.jpg" alt="Partner Logo" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/2.PNG" alt="Partner Logo 2" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/3.PNG" alt="Partner Logo 3" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/4.JPG.jpeg" alt="Partner Logo 4" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/5.JPG.jpeg" alt="Partner Logo 5" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/6.JPG.jpeg" alt="Partner Logo 6" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Artboard-1GP-LOGO-e1739172944544.png" alt="Partner Logo 7" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Global+Partners.webp" alt="Partner Logo 8" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Logo-05.png" alt="Partner Logo 9" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Prisn-Global-HR-Logo.png" alt="Partner Logo 10" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/Untitled-design-12-1.png" alt="Partner Logo 11" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/cropped-GLOBAL-FULL-LOGO.png" alt="Partner Logo 12" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/cropped-Image1.png" alt="Partner Logo 13" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/cropped-global-rec-sia.png" alt="Partner Logo 14" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/og-image.png" alt="Partner Logo 15" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                    <img src="Recruitment%20Partners%20LOgo/undutchables-recruitment-partner.png.webp" alt="Partner Logo 16" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
-                </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-12 gap-y-16 items-center justify-items-center mt-12">
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/1693557381600.jpg" alt="Partner Logo" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/2.PNG" alt="Partner Logo 2" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/3.PNG" alt="Partner Logo 3" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/4.JPG.jpeg" alt="Partner Logo 4" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/5.JPG.jpeg" alt="Partner Logo 5" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/6.JPG.jpeg" alt="Partner Logo 6" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/Artboard-1GP-LOGO-e1739172944544.png" alt="Partner Logo 7" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/Global+Partners.webp" alt="Partner Logo 8" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/Logo-05.png" alt="Partner Logo 9" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/Prisn-Global-HR-Logo.png" alt="Partner Logo 10" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/Untitled-design-12-1.png" alt="Partner Logo 11" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/cropped-GLOBAL-FULL-LOGO.png" alt="Partner Logo 12" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/cropped-Image1.png" alt="Partner Logo 13" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/cropped-global-rec-sia.png" alt="Partner Logo 14" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/og-image.png" alt="Partner Logo 15" class="max-h-12 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-4 transition-all duration-500 hover:scale-105 cursor-pointer w-full h-24 bg-slate-50 rounded-xl border border-slate-100/50">
+                <img src="Recruitment%20Partners%20LOgo/undutchables-recruitment-partner.png.webp" alt="Partner Logo 16" class="max-h-12 w-auto object-contain">
             </div>
         </div>
     </section>
@@ -199,15 +197,9 @@
                     </div>
                 </div>
                 
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Email Address</label>
-                        <input type="email" required placeholder="john@example.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
-                    </div>
-                    <div class="space-y-2">
-                        <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Phone Number</label>
-                        <input type="tel" required placeholder="+94 77 XXXXXXX" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
-                    </div>
+                <div class="space-y-2">
+                    <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Email Address</label>
+                    <input type="email" required placeholder="info@thecottoncraft.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
                 </div>
 
                 <div class="space-y-2">
@@ -234,27 +226,51 @@
         </div>
     </div>
 
+    <!-- HR Contact Section -->
+    <section class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10">
+            <div class="grid grid-cols-12 h-full">
+                <div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="font-label uppercase text-xs font-semibold tracking-[0.3em] text-primary-fixed mb-6 block">Direct Inquiry</span>
+            <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 decoration-primary-fixed decoration-4">Connect with Our <span class="text-primary-fixed">HR Team.</span></h2>
+            <p class="font-body text-slate-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+                Whether you're curious about our culture, have questions about a specific role, or want to follow up on an application—our recruitment specialists are here to help.
+            </p>
+            <div class="inline-block group">
+                <a href="mailto:hr@thecottoncraft.com" class="flex items-center space-x-4 bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-6 rounded-2xl transition-all duration-500 hover:scale-105">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform">
+                        <span class="material-symbols-outlined text-white">alternate_email</span>
+                    </div>
+                    <span class="font-headline text-2xl md:text-3xl font-bold tracking-tight text-white hover:text-primary-fixed transition-colors">hr@thecottoncraft.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="global-footer"></footer>
     
     <script>
         const jobs = [
-            { title: "Textile Engineer", dept: "Engineering", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Designing and developing innovative fabric structures and manufacturing processes.", icon: "settings_input_component" },
-            { title: "Production Manager", dept: "Operations", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Overseeing daily factory operations to ensure maximum efficiency and quality output.", icon: "precision_manufacturing" },
-            { title: "Supply Chain Coordinator", dept: "Logistics", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Managing logistics and inventory flow from raw materials to finished products.", icon: "account_tree" },
-            { title: "Quality Control Inspector", dept: "QA/QC", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Ensuring every garment and fabric roll meets our rigorous international standards.", icon: "verified_user" },
-            { title: "Merchandiser", dept: "Production", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Bridging the gap between production and sales with strategic product planning.", icon: "store" },
-            { title: "Fashion Designer", dept: "Design", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Creating trend-setting apparel designs that combine aesthetic appeal with technical functionality.", icon: "architecture" },
-            { title: "Accountant", dept: "Finance", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Managing financial records, budgeting, and fiscal reporting for our industrial operations.", icon: "calculate" },
-            { title: "Warehouse Worker", dept: "Logistics", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Handling material storage, organization, and dispatching in our modern distribution center.", icon: "inventory_2" },
-            { title: "Machine Operator", dept: "Production", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Calibrating and running state-of-the-art textile machinery for precision manufacturing.", icon: "settings" },
-            { title: "Fabric Cutter", dept: "Production", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Executing precise material cutting based on technical specifications and patterns.", icon: "content_cut" },
-            { title: "Production Assistant", dept: "Operations", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Supporting line operations and administrative tasks within the manufacturing floor.", icon: "support_agent" },
-            { title: "Ironing & Presser", dept: "Finishing", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Providing the final professional finish to our high-quality garment collections.", icon: "dry_cleaning" },
-            { title: "Driver", dept: "Logistics", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Safely transporting raw materials and finished goods between facilities and clients.", icon: "local_shipping" },
-            { title: "Factory Security Guard", dept: "Security", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Maintaining a safe and secure environment for our staff and company assets.", icon: "security" },
-            { title: "Outlet Sales Clerk", dept: "Retail", type: "Part-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Providing exceptional customer service and product knowledge at our retail outlets.", icon: "shopping_cart" },
-            { title: "Maintenance Helper", dept: "Facility", type: "Full-Time", loc: "Wingfield, Australia & Edmonton, Canada", desc: "Ensuring all equipment and facility systems are functioning at peak performance.", icon: "build" }
+            { title: "Textile Engineer", dept: "Engineering", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Designing and developing innovative fabric structures and manufacturing processes.", icon: "settings_input_component" },
+            { title: "Production Manager", dept: "Operations", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Overseeing daily factory operations to ensure maximum efficiency and quality output.", icon: "precision_manufacturing" },
+            { title: "Supply Chain Coordinator", dept: "Logistics", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Managing logistics and inventory flow from raw materials to finished products.", icon: "account_tree" },
+            { title: "Quality Control Inspector", dept: "QA/QC", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Ensuring every garment and fabric roll meets our rigorous international standards.", icon: "verified_user" },
+            { title: "Merchandiser", dept: "Production", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Bridging the gap between production and sales with strategic product planning.", icon: "store" },
+            { title: "Fashion Designer", dept: "Design", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Creating trend-setting apparel designs that combine aesthetic appeal with technical functionality.", icon: "architecture" },
+            { title: "Accountant", dept: "Finance", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Managing financial records, budgeting, and fiscal reporting for our industrial operations.", icon: "calculate" },
+            { title: "Warehouse Worker", dept: "Logistics", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Handling material storage, organization, and dispatching in our modern distribution center.", icon: "inventory_2" },
+            { title: "Machine Operator", dept: "Production", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Calibrating and running state-of-the-art textile machinery for precision manufacturing.", icon: "settings" },
+            { title: "Fabric Cutter", dept: "Production", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Executing precise material cutting based on technical specifications and patterns.", icon: "content_cut" },
+            { title: "Production Assistant", dept: "Operations", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Supporting line operations and administrative tasks within the manufacturing floor.", icon: "support_agent" },
+            { title: "Ironing & Presser", dept: "Finishing", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Providing the final professional finish to our high-quality garment collections.", icon: "dry_cleaning" },
+            { title: "Driver", dept: "Logistics", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Safely transporting raw materials and finished goods between facilities and clients.", icon: "local_shipping" },
+            { title: "Factory Security Guard", dept: "Security", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Maintaining a safe and secure environment for our staff and company assets.", icon: "security" },
+            { title: "Outlet Sales Clerk", dept: "Retail", type: "Part-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Providing exceptional customer service and product knowledge at our retail outlets.", icon: "shopping_cart" },
+            { title: "Maintenance Helper", dept: "Facility", type: "Full-Time", loc: "Wingfield, SA 5013 | Edmonton, AB T5L 3H6", desc: "Ensuring all equipment and facility systems are functioning at peak performance.", icon: "build" }
         ];
 
         const grid = document.getElementById('jobs-grid');
