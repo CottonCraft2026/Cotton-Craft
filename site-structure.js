@@ -174,13 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="faq.html" class="flex items-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
                             <span class="text-[11px] font-bold uppercase tracking-wider text-slate-700">FAQ</span>
                         </a>
-                        <a href="careers.html" class="flex items-center p-3 rounded-xl hover:bg-blue-50/50 transition-colors group/career">
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-primary group-hover/career:text-primary">Careers</span>
-                            <span class="ml-auto px-2 py-0.5 bg-primary/10 text-primary rounded-[4px] text-[7px] font-black uppercase tracking-widest">Hiring</span>
-                        </a>
                     </div>
                 </div>
             </div>
+            <a href="careers.html" class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200">Careers</a>
             <a href="contact.html" class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200">Contact Us</a>
         </div>
 
@@ -236,10 +233,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="sewing-contractors.html" class="p-2 text-[10px] text-slate-600 uppercase font-medium">Industrial Sewing Contractors</a>
                     <a href="events-news.html" class="p-2 text-[10px] text-slate-600 uppercase font-medium">Events</a>
                     <a href="faq.html" class="p-2 text-[10px] text-slate-600 uppercase font-medium">FAQ</a>
-                    <a href="careers.html" class="p-2 text-[10px] text-primary uppercase font-bold flex items-center justify-between">Careers <span class="px-2 py-0.5 bg-primary/10 rounded text-[7px] font-black">HIRING</span></a>
                 </div>
             </div>
 
+            <a href="careers.html" class="p-3 text-[10px] font-bold uppercase tracking-widest text-slate-900 border-t border-slate-100 mt-2">Careers</a>
             <a href="contact.html" class="p-3 text-[10px] font-bold uppercase tracking-widest text-slate-900 border-t border-slate-100 mt-2">Contact Us</a>
             <button onclick="location.href='contact.html'" class="mt-4 w-full bg-primary text-white p-4 rounded-xl text-[10px] font-bold uppercase tracking-[0.2em]">Request a Quote</button>
         </div>
